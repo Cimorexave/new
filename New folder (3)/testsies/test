@@ -1,0 +1,21 @@
+hint: folder = directory
+***
+mkdir: make folder(directory)
+scandir  (done)
+?files
+pathinfo
+move_uploaded_file
+enctype html
+name="UL[]" multiple
+is_dir (done)
+rmdir: remove folder(directory)
+unlink: remove file
+is_file (done)
+<script>
+    function merkeVZ(zuMerkendesVZ) {
+        document.getElementById("VZDel").value = zuMerkendesVZ;
+        document.getElementById("frm").submit(); //schickt das Formular mit der id="frm" ab
+    }
+</script>
+echo ('<li>' . $d . '<button type="button" onclick="merkeVZ(\'' . $vz . $d . '/\');">x</button>');
+    $ok = move_uploaded_file($upl["tmp_name"],"pdf/" . $upl["name"]);
